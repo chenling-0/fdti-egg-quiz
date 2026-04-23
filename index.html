@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FDTI | 测测你是哪种旦</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="screen-noise"></div>
+
+    <main class="app-shell">
+      <section id="intro-screen" class="screen intro-screen active">
+        <div class="intro-card">
+          <div class="intro-scene">
+            <div class="intro-sky"></div>
+            <div class="intro-cloud cloud-a"></div>
+            <div class="intro-cloud cloud-b"></div>
+            <div class="intro-ground"></div>
+
+            <div class="intro-stage">
+              <div class="pixel-chicken-shadow"></div>
+              <img class="pixel-chicken" src="./assets/chicken-transparent-v2.png" alt="" />
+
+              <div class="lay-egg-zone" aria-hidden="true">
+                <div class="small-egg-shadow"></div>
+                <img class="small-egg" src="./assets/egg-transparent-v2.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-copy">
+            <h1 class="pixel-title">FDTI</h1>
+            <p class="sub-title">测测你是哪种旦</p>
+            <button id="start-btn" class="primary-btn">开始测试</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="screen quiz-screen">
+        <section class="question-panel question-panel-full">
+          <div class="panel-top">
+            <div>
+              <h2 id="panel-title" class="panel-title">正在测你是哪种旦</h2>
+            </div>
+
+            <div class="progress-cluster">
+              <div id="egg-visual" class="egg-inline stage-1">
+                <img id="egg-image" src="./assets/egg-progress-1-cut.png" alt="鸡蛋破壳进度" />
+              </div>
+
+              <div class="progress-block">
+                <span id="progress-text">0 / 0</span>
+                <div class="progress-bar">
+                  <div id="progress-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <article class="question-card">
+            <p id="question-index" class="question-index"></p>
+            <h3 id="question-text" class="question-title"></h3>
+            <div id="options-list" class="options-list"></div>
+
+            <div class="card-actions">
+              <button id="prev-btn" class="ghost-btn">上一题</button>
+            </div>
+          </article>
+        </section>
+
+        <div id="hatching-overlay" class="hatching-overlay" aria-hidden="true">
+          <div class="hatching-card">
+            <div class="hatching-egg hatching">
+              <img id="hatching-egg-image" src="./assets/egg-progress-4-cut.png" alt="" />
+            </div>
+            <p class="hatching-text">正在破壳</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="result-screen" class="screen result-screen">
+        <div class="result-wrap">
+          <div class="result-top">
+            <h2 class="panel-title">测试结果</h2>
+            <div class="result-actions">
+              <button id="copy-btn" class="ghost-btn">复制结果文案</button>
+              <button id="restart-btn" class="primary-btn">重新测试</button>
+            </div>
+          </div>
+
+          <article class="result-card">
+            <div class="result-hero">
+              <img id="result-image" src="" alt="" />
+            </div>
+
+            <div class="result-copy">
+              <p class="result-eyebrow">你的旦型结果</p>
+              <h3 id="result-name" class="pixel-name"></h3>
+              <p id="result-summary" class="result-summary"></p>
+              <p id="result-description" class="result-description"></p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
