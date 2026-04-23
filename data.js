@@ -3,7 +3,7 @@ window.QUIZ_DATA = {
     {
       id: "guanghualou",
       name: "光滑楼",
-      image: "./assets/guanghualou-stardew.png",
+      image: "./assets/guanghualou.png",
       summary: "气场很稳，主心骨感很强，做事喜欢站在全局里安排节奏。",
       description:
         "你通常会先看到结构、效率和掌控感。很多人遇事会来找你，不是因为你最吵，而是因为你身上有一种“这人能把局面收住”的稳定感。你更像一颗有方向感的蛋，知道什么时候冲在前面，什么时候把事情推进到位。"

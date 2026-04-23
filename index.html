@@ -40,19 +40,18 @@
       <section id="quiz-screen" class="screen quiz-screen">
         <section class="question-panel question-panel-full">
           <div class="panel-top">
-            <div>
-              <h2 id="panel-title" class="panel-title">正在测你是哪种旦</h2>
-            </div>
+            <div class="progress-copy">
+              <p class="progress-label">正在孵化</p>
+              <div class="progress-cluster">
+                <div id="egg-visual" class="egg-inline stage-1">
+                  <img id="egg-image" src="./assets/egg-progress-1-cut.png" alt="鸡蛋破壳进度" />
+                </div>
 
-            <div class="progress-cluster">
-              <div id="egg-visual" class="egg-inline stage-1">
-                <img id="egg-image" src="./assets/egg-progress-1-cut.png" alt="鸡蛋破壳进度" />
-              </div>
-
-              <div class="progress-block">
-                <span id="progress-text">0 / 0</span>
-                <div class="progress-bar">
-                  <div id="progress-fill"></div>
+                <div class="progress-block">
+                  <span id="progress-text">0 / 0</span>
+                  <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -81,24 +80,21 @@
 
       <section id="result-screen" class="screen result-screen">
         <div class="result-wrap">
-          <div class="result-top">
-            <h2 class="panel-title">测试结果</h2>
-            <div class="result-actions">
-              <button id="copy-btn" class="ghost-btn">复制结果文案</button>
-              <button id="restart-btn" class="primary-btn">重新测试</button>
-            </div>
-          </div>
-
           <article class="result-card">
             <div class="result-hero">
               <img id="result-image" src="" alt="" />
             </div>
 
             <div class="result-copy">
-              <p class="result-eyebrow">你的旦型结果</p>
+              <p class="result-eyebrow">你的孵化结果</p>
               <h3 id="result-name" class="pixel-name"></h3>
               <p id="result-summary" class="result-summary"></p>
               <p id="result-description" class="result-description"></p>
+
+              <div class="result-actions">
+                <button id="copy-btn" class="ghost-btn">复制结果文案</button>
+                <button id="restart-btn" class="primary-btn">重新测试</button>
+              </div>
             </div>
           </article>
         </div>

@@ -29,7 +29,6 @@ const elements = {
   optionsList: document.getElementById("options-list"),
   progressText: document.getElementById("progress-text"),
   progressFill: document.getElementById("progress-fill"),
-  panelTitle: document.getElementById("panel-title"),
   eggVisual: document.getElementById("egg-visual"),
   eggImage: document.getElementById("egg-image"),
   resultImage: document.getElementById("result-image"),
@@ -93,8 +92,7 @@ function renderQuestion() {
   const question = quiz.questions[state.currentQuestion];
   const savedAnswer = state.answers[state.currentQuestion];
 
-  elements.panelTitle.textContent = "正在测你是哪种旦";
-  elements.questionIndex.textContent = `Question ${state.currentQuestion + 1} / ${quiz.questions.length}`;
+  elements.questionIndex.textContent = "";
   elements.questionText.textContent = question.text;
   elements.optionsList.innerHTML = "";
 
