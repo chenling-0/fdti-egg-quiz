@@ -152,7 +152,7 @@ body {
   bottom: 14px;
   width: 168px;
   height: 22px;
-  animation: intro-shadow 4s ease-in-out infinite;
+  animation: intro-shadow 4s ease-out forwards;
 }
 
 .pixel-chicken {
@@ -162,7 +162,7 @@ body {
   width: 210px;
   height: auto;
   image-rendering: pixelated;
-  animation: chicken-walk 4s ease-in-out infinite;
+  animation: chicken-walk 4s linear forwards;
 }
 
 .lay-egg-zone {
@@ -180,7 +180,7 @@ body {
   height: 12px;
   opacity: 0;
   transform: translateX(0);
-  animation: egg-shadow-appear 4s ease-in-out infinite;
+  animation: egg-shadow-appear 4s ease-out forwards;
 }
 
 .small-egg {
@@ -192,7 +192,7 @@ body {
   opacity: 0;
   transform: translateY(18px) scale(0.84);
   transform-origin: center bottom;
-  animation: egg-lay 4s ease-in-out infinite;
+  animation: egg-lay 4s ease-out forwards;
 }
 
 .intro-copy {
@@ -296,7 +296,7 @@ body {
 }
 
 .progress-label {
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 0.95rem;
   font-weight: 700;
   color: #5f3922;
@@ -347,7 +347,7 @@ body {
 .progress-block span {
   display: block;
   margin-bottom: 8px;
-  text-align: left;
+  text-align: right;
   font-weight: 700;
 }
 
@@ -586,7 +586,7 @@ body {
     transform: translateX(120px) translateY(0);
   }
   100% {
-    transform: translateX(290px) translateY(0);
+    transform: translateX(520px) translateY(0);
   }
 }
 
@@ -605,7 +605,7 @@ body {
     transform: translateX(120px) scaleX(1);
   }
   100% {
-    transform: translateX(290px) scaleX(1);
+    transform: translateX(520px) scaleX(1);
   }
 }
 
